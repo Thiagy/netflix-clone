@@ -1,0 +1,669 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+::-webkit-scrollbar {
+
+    width: 8px;
+    height: 150px;
+
+}
+
+::-webkit-scrollbar-thumb {
+
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 3px;
+    backdrop-filter: blur(5px);
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background-color: rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+    backdrop-filter: blur(5px);
+
+}
+  
+::-webkit-scrollbar-track{
+
+    background-color: white;
+
+}
+
+#container-main{
+
+    background-image: linear-gradient(to right, rgba(0,0,0,.75) 45%, rgba(0,0,0,.6) 55%), url("./img/1.jpg");
+    background-size: cover;
+    height: 100vh;
+    transition: 2.5s;
+
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 50px;
+}
+
+option{
+    
+    text-align: center;
+    font-weight: bolder;
+    padding: 10px;
+    color: black;
+}
+
+option:hover{
+    
+    color: blue;
+}
+
+#div-logo{
+
+    width: 148px;
+    
+}
+
+#div-logo svg path{
+
+    fill: #E50914;
+
+}
+
+.language-header{
+
+    height: 32px;
+    width: 148px;
+    background-color: transparent;
+    border-radius: 6px;
+    color: white;
+}
+
+#btn-sign-in{
+    background-color: #E50914;
+    color: white;
+    height: 32px;
+    width: 76px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+#box-slide-main{
+    position: relative;
+    height: 84.6vh;
+}
+
+.box-arrows{
+
+    position: absolute;
+    top: 34%;
+    height: 120px;
+    width: 24px;
+    border-radius: 6px;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+
+}
+
+#box-arrow-left{
+    
+    left: 46px;
+
+}
+
+#box-arrow-right{
+    
+    right: 46px;
+
+}
+
+.arrows{
+
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    top: 45%;
+    box-shadow: 2px 2px 1px #C0C0C0;
+    
+}
+
+.arrows:hover{
+
+    box-shadow: 2px 2px 1px white;
+    
+}
+
+#arrow-left{
+    left:10px;
+    transform: rotate(135deg);
+}
+
+#arrow-right{
+    right:10px;
+    transform: rotate(-45deg);
+}
+
+
+#box-title{
+
+    position: absolute;
+    top: 11%;
+    left: 10.9%;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    width: 60%;
+    color: white;
+
+
+}
+
+#box-title h1 {
+
+    font-size: clamp(24px, 5vw, 56px);
+
+}
+
+#box-insert-email-header p{
+    margin-bottom: 20px;
+}
+
+.flex-insert-email{
+
+    display: flex;
+    gap: 14px;
+
+}
+
+.div-input-insert-email-header{
+
+    height: 56px;
+    width:50%;
+
+}
+
+.div-input-insert-email-header input{
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    padding-left: 10px;
+    border-radius: 4px;
+    color: white;
+
+}
+
+.div-btn-get-started{
+
+    height: 56px;
+    width: 209.25px;
+    border-radius: 4px;
+
+}
+
+.div-btn-get-started button{
+
+    height: 100%;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #E50914;
+    color: white;
+    font-size: 24px;
+    border: 1px solid transparent;
+
+}
+
+main {
+
+    padding: 40px 0;
+    background-color: #000000;
+    border-top: 3px solid #C51F51;
+    
+}
+
+#box-images-title-button{
+    display: flex;
+    width: 78%;
+    border: 1px solid black;
+    margin: 0 auto;
+    transition: .6s;
+    
+}
+
+#box-images-title-button:hover{
+    
+    transform: scale(1.01);
+}
+
+#div-image-popcorn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#box-title-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background: linear-gradient(to bottom, #472565, 10%, #171D52);
+    width: 95%;
+    padding: 25px 20px;
+    border-radius: 12px;
+    color: white;
+}
+  
+#box-button{
+    height: 40px;
+    width: 98.78px;
+}
+
+#box-button button{
+    height: 100%;
+    width: 100%;
+    background-color: #383B61;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#box-button button:hover{
+    
+    background-color: #333557;
+    
+}
+
+#box-options{
+    margin: 70px auto;
+    width: 78%;
+    color: white;
+    
+}
+
+#box-options h2{
+
+    margin-bottom: 30px;
+    
+}
+
+
+#box-flex-array-options{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+
+}
+
+.option{
+
+    width: 252px;
+    position: relative;
+    background: linear-gradient(to bottom right, #192144, 50%, #210F18);
+    color: white;
+    border-radius: 12px;
+    padding: 30px 20px;
+    height: 328px;
+   
+
+}
+
+.option h2{
+
+    margin-bottom: 20px;
+    font-size: clamp(18px, 5vw, 24px);
+    
+}
+.img-option{
+
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+#container-questions{
+
+    width: 78%;
+    margin: 0 auto;
+    color: white;
+    
+}
+
+#container-questions h2{
+
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+#div-quetions-answers{
+
+    width: 79.4%;
+}
+
+.box-quetions-answers{
+    margin-bottom: 9px;
+    
+}
+
+.box-quetions{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2D2D2D;
+    cursor: pointer;
+    
+}
+.box-quetions{
+
+    font-size: clamp(8px, 5vw, 14px);
+
+}
+
+.box-answers{
+
+    padding: 20px;
+    background-color: #2D2D2D;
+    display: none;
+    transition: display 1s;
+    
+}
+
+.box-quetions:hover{
+
+    background-color: #414141;
+
+}
+
+.box-arrows-options{
+
+    position: relative;
+    height: 30px;
+    width: 30px;
+    transition: transform .5s;
+
+}
+
+.arrows-options{
+    
+    position: absolute;
+    left: 13px;
+    height: 30px;
+    width: 2px;
+    background-color: white;
+
+}
+
+.arrows-options-1{
+    
+    transform: rotate(90deg);
+    
+}
+
+footer{
+
+    background-color: #000000;
+    padding: 50px 0;
+    color: white;
+
+}
+
+#box-insert-email-footer{
+
+    width: 78%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+#box-insert-email-footer p{
+
+    margin-bottom: 15px;
+
+}
+
+.div-input-insert-email-footer{
+
+    height: 56px;
+    width: 70%;
+
+}
+.div-input-insert-email-footer input{
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(5px);
+    border: 1px solid white;
+    padding-left: 10px;
+    border-radius: 4px;
+    color: white;
+
+}
+
+#box-doubt-list{
+
+    width: 74%;
+    margin: 70px auto;
+
+}
+
+#box-doubt-list h4{
+
+    margin-bottom: 40px;
+
+}
+
+#flex-doubt-list{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    
+}
+
+.doubt-list{
+
+    width: 220px;
+    list-style: none;
+
+}
+
+.doubt-list li{
+
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #B3B3B3;
+    
+}
+
+.language-footer{
+
+    margin-top: 40px;
+    height: 40px;
+    width: 160px;
+    background-color: transparent;
+    border-radius: 6px;
+    color: white;
+    border: 3px solid white;
+    
+}
+
+@media (max-width: 1007px){
+
+    #box-options,  #box-images-title-button{
+
+        width: 90%;
+        
+    }
+
+    .option{
+
+        width: 47%;
+        height: 230px;
+    
+    }
+
+}
+
+@media (max-width: 955px){
+
+    #box-title{
+
+        width: 80%;
+    
+    }
+
+    .box-arrows{
+
+        top: 92.3%;
+        height: 27px;
+        width: 27px;
+        border-radius: 50%;
+        border: 1px solid white;
+    
+    }
+    
+    #box-arrow-left{
+        
+        left: 42%;
+    
+    }
+    
+    #box-arrow-right{
+        
+        right: 42%;
+    
+    }
+
+    .arrows{
+
+        top: 20%;
+        
+    }
+
+    #box-options{
+
+        width: 90%;
+        
+    }
+
+    #div-logo{
+
+        width: 110px;
+        
+    }
+
+    #box-flex-array-options{
+
+        flex-direction: column;
+
+    }
+
+    .option{
+
+        width: 100%;
+        height: 230px;
+    
+    }
+
+    #container-questions{
+
+        width: 96%;
+        
+    }
+
+    #div-quetions-answers, #box-insert-email-footer{
+
+        width: 100%;
+
+    }
+
+   
+}
+
+
+@media (max-width: 600px){
+
+    header{
+        padding: 26px 10px;
+    }
+
+    .language-header{
+        width: 80px;
+    }
+
+    #box-arrow-left{
+        
+        left: 30%;
+    
+    }
+    
+    #box-arrow-right{
+        
+        right: 30%;
+    
+    }
+
+    #box-title{
+
+        width: 97%;
+        left: 1.5%;
+        margin: 0 auto;
+    
+    }
+
+    #box-images-title-button{
+
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    #box-title-button{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .div-btn-get-started{
+        width: 120px;
+        font-size: 16px;
+    }
+
+    .div-btn-get-started button{
+        
+        font-size: 16px;
+    }
+
+    .flex-insert-email{
+        flex-direction: column;
+    }
+
+    .div-input-insert-email-header, .div-input-insert-email-footer{
+        width: 100%;
+    }
+
+}
+
